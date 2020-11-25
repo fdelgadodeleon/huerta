@@ -5,7 +5,7 @@ import './App.css';
 import Header from './modules/header/Header';
 import Home from './modules/home/Home';
 import About from './modules/about/About';
-import Detail from './modules/detail/Detail';
+import DetailFunc from './modules/detail/DetailFunc';
 import NotFound from './modules/notFound/NotFound';
 
 // router
@@ -21,7 +21,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
-          <Route path="/details/:id" component={Detail} />
+          <Route path="/details/:id" component={DetailFunc} />
           <Route component={NotFound} />
         </Switch>
       </div>
